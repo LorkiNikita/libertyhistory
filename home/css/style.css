@@ -295,6 +295,9 @@ body.lock {
   height: 38px;
   margin-top: 40px;
 }
+.logo_body{
+  max-width: 80%;
+}
 
 .popup {
   position: fixed;
