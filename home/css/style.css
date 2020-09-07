@@ -263,12 +263,14 @@ body.lock {
 
 .context_body {
   padding: 3%;
+
 }
 
 .context_body_content {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 80%;
 }
 
 .icons_con {
