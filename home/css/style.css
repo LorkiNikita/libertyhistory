@@ -270,7 +270,7 @@ body.lock {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 80%;
+  max-width: 70%;
 }
 
 .icons_con {
