@@ -278,7 +278,7 @@ body.lock {
   height: 100%;
 }
 
-.icons_con .popup_content .image {
+.icons_con .popup_content.image {
   width: 95%;
   max-height: 100%;
 }
