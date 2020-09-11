@@ -278,11 +278,6 @@ body.lock {
   height: 100%;
 }
 
-.icons_con .popup_content.image {
-  width: 95%;
-  max-height: 100%;
-}
-
 .correct_image {
   max-width: 400px;
   max-height: 373px;
@@ -558,5 +553,10 @@ body.lock {
   .r {
     top: 2%;
     right: 2%;
+  }
+
+  .popup_content.image {
+    width: 95%;
+    max-height: 100%;
   }
 }
