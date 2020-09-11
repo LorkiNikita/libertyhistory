@@ -23,7 +23,7 @@ body.lock {
 }
 
 .conteiner {
-  min-width: 1200px;
+  max-width: 100%;
 }
 
 .header {
@@ -103,21 +103,16 @@ body.lock {
   border: 1px solid #101113;
 }
 
+/*MEDIA*/
+
 .banner {
   width: 100%;
   max-height: 650px;
-  display: inline-block;
-  text-align: center;
-}
-
-.banner_body {
-  padding-top: 20vh;
-  min-height: 610px;
-}
-
-.banner_content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .tex {
@@ -157,6 +152,10 @@ body.lock {
   transition: all 1.2s ease 0s;
   opacity: 0;
   visibility: hidden;
+}
+
+.tex_t_content_2._dont_scroll {
+  transform: translate(-40%, 0%);
 }
 
 .tex_t_content_2._anim_active {
@@ -252,25 +251,24 @@ body.lock {
   margin-top: 18px;
   color: #4b596c;
   font-family: Roboto;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 18px;
 }
 
 .context {
   background: #f6f6f7;
-  height: 23em;
+  min-height: 34em;
 }
 
 .context_body {
-  padding: 3%;
-
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  max-height: 17em;
 }
 
 .context_body_content {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 70%;
 }
 
 .icons_con {
@@ -281,8 +279,8 @@ body.lock {
 }
 
 .correct_image {
-  width: 400px;
-  height: 220px;
+  max-width: 400px;
+  max-height: 373px;
 }
 
 .icon_one {
@@ -294,9 +292,6 @@ body.lock {
   width: 18px;
   height: 38px;
   margin-top: 40px;
-}
-.logo_body{
-  max-width: 80%;
 }
 
 .popup {
@@ -435,6 +430,7 @@ body.lock {
   border: 3px solid #000000;
   transition: all 0.8s ease 0s;
   transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+  max-height: 50%;
 }
 
 .popup_content.image {
@@ -508,4 +504,54 @@ body.lock {
   text-decoration: none;
   color: #ffffff;
   background-color: #205d08;
+}
+
+@media (max-widht: 767px), (max-height: 890px) {
+  .context {
+    background: #f6f6f7;
+  }
+
+  .context_body {
+    padding: 1%;
+    display: flex;
+  }
+
+  .context_body_content {
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text_con_t {
+    margin-top: 12px;
+    color: #4b596c;
+    font-family: Roboto;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .text_con_h {
+    font-size: 20px;
+  }
+
+  .correct_image {
+    padding-top: 10px;
+    max-width: 350px;
+    max-height: 323px;
+  }
+
+  .tex_h1 {
+    padding-left: 1%;
+    font-size: 40px;
+  }
+
+  .login {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .r {
+    top: 2%;
+    right: 2%;
+  }
 }

@@ -2,6 +2,8 @@ const popupLinks = document.querySelectorAll('.popup-links');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock_padding");
 const animItems = document.querySelectorAll('._anim-items');
+const windowIn = body.offsetWidth;
+const tf = document.querySelector(' .tex_t_content_2');
 
 
 let unlock = true;
@@ -9,7 +11,9 @@ let unlock = true;
 const timeout = 800;
 
 
-
+if (Number(windowIn) <= 830) {
+    tf.classList.add('_dont_scroll');
+}
 if (animItems.length > 0) {
     window.addEventListener("scroll", animOnScroll);
     function animOnScroll() {
@@ -63,8 +67,12 @@ if (popupBody.length > 0) {
     for (let index = 0; index < popupBody.length; index++) {
         const popupL = popupBody[index];
         const popupLo = popupL.classList.contains('locks');
-        if (popupLo) {
-            popupL.style.marginTop = ('5%');
+        if (Number(windowIn) <= 830) {
+            popupL.style.marginTop = "70%";
+        } else {
+          if (popupLo) {
+            popupL.style.marginTop = "5%";
+          }
         }
         
     }
@@ -82,6 +90,9 @@ if (popupCloseIcon.length > 0) {
         if (el.closest('.img')) {
             el.classList.add('r');
             el.style.fontSize = "50px";
+            if (Number(windowIn) <= 830) {
+                el.style.fontSize = "25px";
+            }
             
             
         } else{
